@@ -132,8 +132,8 @@ public class DoublyLindedList {
 				}
 				Node temp2 = temp.getNext();
 				Node temp1 = temp.getPrevious();
-				temp.setNext(newNode);
-				temp1.setPrevious(newNode);
+				temp2.setPrevious(temp1);
+				temp1.setNext(temp2);
 				size--;
 			}
 		} else {
